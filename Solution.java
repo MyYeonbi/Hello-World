@@ -13,7 +13,7 @@ class Solution {
         //✅ k로부터 모든 노드들의 최단거리 구하기 => 다익스트라 알고리즘 수행
         int maxTime = 0;
         int visitCount = 1;
-        while (!pq.isEmpty()) {
+        while (!pq.isEmpty()
             int[] cur = pq.remove();
             int u = cur[0], time = cur[1];
             if (visited[u] < time) continue;
